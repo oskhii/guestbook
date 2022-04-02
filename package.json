@@ -1,0 +1,19 @@
+{
+  "name": "guestbook",
+  "version": "1.0.0",
+  "description": "guestbook application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "guestbook",
+    "application"
+  ],
+  "author": "Oskar Hiismäki",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3"
+  }
+}

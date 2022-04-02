@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
+	<title>New message page</title>
+	<link rel="stylesheet" href="guestbook.css">   
+</head>
+<body>
+	<div class="container">
+		<br>
+		<h1>This is the New Message page</h1><br>
+		<h2>Here you can add a message to the guestbook page</h2><br>
+	</div>		
+	<div class="container">
+		<h3>Instrcutions</h3><br>
+		<h4>1. Fill all the text fields below</h4>
+		<h4>2. Click "Submit"</h4>
+		<h4>3. Your message will be added to the <a href="/guestbook">guestbook </a>page</h4>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>To the frontpage</h3>
+				<h3><a href="/">Click here</a></h3>
+			</div>
+			<div class="col-sm-6">
+				<h3>To the guestbook page</h3>
+				<h3><a href="/guestbook">Click here</a></h3>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h3>Enter your message here:</h3><br>
+		<form method="post" action="/newmessage" onsubmit="notification()">
+			<div class="row">
+				<div class="col-sm-4">
+					Name <br><input type="text" name="name" placeholder="Type here..." required>
+				</div>
+				<div class="col-sm-4">
+					Country <br><input type="text" name="country" placeholder="Type here..." required>
+				</div>
+				<div class="col-sm-4">
+					Message <br><input type="text" name="message" placeholder="Type here..." required>
+				</div>
+			</div>
+		<br>
+		<input type="submit" value="Submit">
+		</form>			
+	</div>
+	<script src="guestbook.js"></script>
+</body>
